@@ -109,7 +109,7 @@ export default function Nav() {
 	 		<div className="logo-box">
 		 		<Link href="/">
 		 			<a>
-		 				<img className="logo" src="../public/VERITOOLZ.png" alt="veritoolz logo"/>
+		 				<img className="logo" src="/VERITOOLZ.png" alt="veritoolz logo"/>
 		 			</a>
 		 		</Link>
 	 		</div>
