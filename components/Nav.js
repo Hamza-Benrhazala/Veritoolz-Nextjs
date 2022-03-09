@@ -1,4 +1,6 @@
 import Link from "next/link";
+import Image from "next/image";
+import Logo from '../public/VERITOOLZ.png'
 import { useRef } from "react";
 import { DATA } from "../utils/data"
 
@@ -109,7 +111,7 @@ export default function Nav() {
 	 		<div className="logo-box">
 		 		<Link href="/">
 		 			<a>
-		 				<img className="logo" src="/VERITOOLZ.png" alt="veritoolz logo" width="155px" height="42px"/>
+		 				<Image className="logo" src={Logo} alt="veritoolz logo"/>
 		 			</a>
 		 		</Link>
 	 		</div>
