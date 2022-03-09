@@ -1,7 +1,7 @@
 import Link from "next/link";
 
 export default function ToolContainer({ToolName, ToolUrl, Description, CategoryName, CategoryUrl}) {
-	return(
+  return(
 	   	<div className="tools-category">
 			<Link
       href={`/${CategoryUrl}/${ToolUrl}`}

@@ -11,5 +11,4 @@ https://veritoolz.com/converters/text-to-base64
 https://veritoolz.com/converters/text-to-hex
 https://veritoolz.com/seo/question-explorer
 https://veritoolz.com/seo/Keywords-tool
-https://veritoolz.com/social-media/create-hashtags-from-keywords
-https://veritoolz.com/privacy-policy
+https://veritoolz.com/social-media/keyword-to-hashtag
