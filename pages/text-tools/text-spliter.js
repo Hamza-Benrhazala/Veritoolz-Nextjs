@@ -69,7 +69,7 @@ export default function TextSeparator() {
    			<ul className="how-to">
 				<li>Put your text in the text area.</li>
 				<li>Put your separator in the separator area.</li>
-				<li>Click on the submit button and you'll get your result.</li>
+				<li>Click on the submit button and you&apos;ll get your result.</li>
 				<li><span className="span-optional">optional:</span> click on the download button to download your result as text file.</li>
 			</ul>
 		</article>
@@ -98,7 +98,7 @@ export default function TextSeparator() {
 		</div>
 		<article className="content">
  			<h2>Example</h2>
- 			<p>In this basic example we will try to split an email to get both <span className="span-code">"usermane"</span> and <span className="span-code">"domain name"</span>  in a separate location.
+ 			<p>In this basic example we will try to split an email to get both <span className="span-code">&quot;usermane&quot;</span> and <span className="span-code">&quot;domain name&quot;</span>  in a separate location.
  			</p>
  			<p>The demo text:</p>
  			<div className="code-playground">

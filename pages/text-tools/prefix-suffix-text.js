@@ -140,7 +140,7 @@ export default function PrefixSuffix() {
 			<article className="content">
 				<h1>Add Prefix/Suffix to text</h1>
 				<p>
-					Best tool to prefix/suffix your text online with the option to ignore empty lines automaticlly out of the box, you can also download the result if you want, try this tool and save your time. It's 100% for free.
+					Best tool to prefix/suffix your text online with the option to ignore empty lines automaticlly out of the box, you can also download the result if you want, try this tool and save your time. It&apos;s 100% for free.
 				</p>
 			</article>
 			<article className="content">
@@ -149,7 +149,7 @@ export default function PrefixSuffix() {
 					<li>Put your text in the text area.</li>
 					<li>Put your prefix or suffix keywords in the prefix or suffix area.</li>
 					<li>Click on the submit button and will get your result in the result area.</li>
-					<li><span className="span-optional">optional:</span> check the "ignore empty lines" box to ignore empty line.</li>
+					<li><span className="span-optional">optional:</span> check the &quot;ignore empty lines&quot; box to ignore empty line.</li>
 					<li><span className="span-optional">optional:</span> click on the download button to download your result as text a file.</li>
 				</ul>
 			</article>

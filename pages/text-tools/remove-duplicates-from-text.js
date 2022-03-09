@@ -127,8 +127,8 @@ export default function RemoveDupes() {
 			</div>
 			<article className="content">
 	 			<h2>Example</h2>
-	 			<p>In this basic example we will try to demonstrate how you can use text spliter with both modes <span className="span-code">"Multi-line"</span> and <span className="span-code">"text"</span> to remove duplicates from your text.<br/>
-	 				1) will start with <span className="span-code">"Multi-line"</span> mode.<br/> multi-line is basically a mode that treat your text as a bunch of lines, it compare those lines and see if there is a duplicated line and remove it.
+	 			<p>In this basic example we will try to demonstrate how you can use text spliter with both modes <span className="span-code">&quot;Multi-line&quot;</span> and <span className="span-code">"text"</span> to remove duplicates from your text.<br/>
+	 				1) will start with <span className="span-code">&quot;Multi-line&quot;</span> mode.<br/> multi-line is basically a mode that treat your text as a bunch of lines, it compare those lines and see if there is a duplicated line and remove it.
 	 			</p>
 	 			<p>The demo text:</p>
 	 			<div className="code-playground">
@@ -137,7 +137,7 @@ export default function RemoveDupes() {
 	 			</div>
 	 			<p>The result will be:</p>
 	 			<div className="code-playground">Hello world</div>
-	 			<p>2) the second one is <span className="span-code">"text"</span> mode.</p>
+	 			<p>2) the second one is <span className="span-code">&quot;text&quot;</span> mode.</p>
 	 			<p>text mode will treat your as a bunch of words and try compare every word in your text and see if there is a duplicate then remove it.<br/>The demo text:</p>
 	 			<div className="code-playground">
 	 				Hello boys, Hello girls.
@@ -146,7 +146,7 @@ export default function RemoveDupes() {
 	 			<div className="code-playground">
 	 				Hello boys, girls.
 	 			</div>
-	 			<p className="small-note">note that both <span className="span-code">"multi-line"</span> mode and <span className="span-code">"text"</span> mode are case sensitive.</p>
+	 			<p className="small-note">note that both <span className="span-code">&quot;multi-line&quot;</span> mode and <span className="span-code">&quot;text&quot;</span> mode are case sensitive.</p>
 			</article>
 			<Footer/>
        </>

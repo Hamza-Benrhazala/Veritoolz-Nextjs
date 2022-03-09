@@ -96,7 +96,7 @@ export default function ExtractData() {
 			<article className="content">
 				<h1>Extract data from text</h1>
 				<p>
-					Best online tool to extract any data you want from your text in a quick and easy way, use this tool if you want to stay away from regex's nightmares. It's 100% for free.
+					Best online tool to extract any data you want from your text in a quick and easy way, use this tool if you want to stay away from regex&apos;s nightmares. It&apos;s 100% for free.
 				</p>
 			</article>
 			<article className="content">
@@ -149,7 +149,7 @@ export default function ExtractData() {
 			</div>
 			<article className="content">
    			<h2>Example</h2>
-   			<p>In this example we'll extract the number <span className="span-code">"26"</span> From the text below.
+   			<p>In this example we&apos;ll extract the number <span className="span-code">&quot;26&quot;</span> From the text below.
    			</p>
    			<p>The demo text:</p>
    			<div className="code-playground">
@@ -158,11 +158,11 @@ export default function ExtractData() {
    			<p>To extract the target we will need two things:<br/>Left delimiter:
    			</p>
    			<div className="code-playground">consists of</div>
-   			<p className="small-note">note that using <span className="span-code">"of"</span> only is also correct in this situation.
+   			<p className="small-note">note that using <span className="span-code">&quot;of&quot;</span> only is also correct in this situation.
    			</p>
    			<p>Right delimiter:</p>
    			<div className="code-playground">letters</div>
-   			<p className="small-note">note that <span className="span-code">"letters."</span> is also correct in this situation.</p>
+   			<p className="small-note">note that <span className="span-code">&quot;letters.&quot;</span> is also correct in this situation.</p>
    			<p>The result:</p>
    			<div className="code-playground">26</div>
 			</article>

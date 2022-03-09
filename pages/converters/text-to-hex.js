@@ -64,7 +64,7 @@ export default function TextToHex() {
 			<article className="content">
 				<h1>Convert text to Hex</h1>
 				<p>
-					Best free online tool to convert text or string to hexadecimal (hex) and download the result as a text file. This tool is made to make developer's life easier.
+					Best free online tool to convert text or string to hexadecimal (hex) and download the result as a text file. This tool is made to make developer&apos;s life easier.
 				</p>
 			</article>
 			<article className="content">

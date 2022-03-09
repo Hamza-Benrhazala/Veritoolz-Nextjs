@@ -165,8 +165,8 @@ export default function Hashtag() {
    			<p>
 	   			There are two main reasons that you should use hashtags
 	   			one of them your probably already know, the second one is not talked about enough.
-	   			number 1 what you already know using hashtags can potentialy increase your reach; each hashtag is an avenue for people to find your content. they're a great way to be found by new people looking or using hashtag
-	   			that you're using.
+	   			number 1 what you already know using hashtags can potentialy increase your reach; each hashtag is an avenue for people to find your content. they&apos;re a great way to be found by new people looking or using hashtag
+	   			that you&apos;re using.
 	   			number 2 the lesser known reason is hashtags actually categorize your content, using hashtags basically tells
 	   			instagram more about your content and how they can categorize you to push your content to the right people.
    			</p>
@@ -174,7 +174,7 @@ export default function Hashtag() {
    		<article className="content">
    			<h2>How To Find The Right Hashtags To Increase Your Reach</h2>
    			<p>
-	   			If you're somebody who's done a lot of hashtag research
+	   			If you&apos;re somebody who&apos;s done a lot of hashtag research
 	   			you have probably come across this use all 30 hashtags strategy:</p>
 	   			<ul>
 	   				<li>10 should have less than 50k uses.</li>
@@ -182,32 +182,32 @@ export default function Hashtag() {
 	   				<li>10 should have less than 500k uses.</li>
 	   			</ul>
 	   			<p>There are a lot of strategies out there that tells you to use a varying amount of hashtags.
-	   			while these strategies or those numbers that I said that kind of varies depending on where you're seeing this information from there is one factor that is not considered and that factor is how relevent the hashtag is right now?.
+	   			while these strategies or those numbers that I said that kind of varies depending on where you&apos;re seeing this information from there is one factor that is not considered and that factor is how relevent the hashtag is right now?.
 	   			because yeah it might have 500k uses but is it currently active? will you get the reach and activity that you want?.</p>
 	   			<p>Your strategy should use two things active hashtags and niche hashtags.
-	   			think of hashtags grouping as a river the hashtag uses tells you how many boats have gone through the river all time but they don't tell you how quickly the river is moving or how many boats are currently there, a quick way to check if the hashtag is a good fit for you is to look at the top 9 posts and pay attention to these 3 things:</p>
+	   			think of hashtags grouping as a river the hashtag uses tells you how many boats have gone through the river all time but they don&apos;t tell you how quickly the river is moving or how many boats are currently there, a quick way to check if the hashtag is a good fit for you is to look at the top 9 posts and pay attention to these 3 things:</p>
 	   			<ul>
 	   				<li>Make sure that your photo has the same feel and vibes.</li>
 	   				<li>Average the engagement on those posts; take all their nine posts (total number of likes and comments)/9, if your engagement is equal to or higher than the result that mean that this hashtag is the right one for you.</li>
-	   				<li>Make sure that those top 9 posts aren't outdated.</li>
+	   				<li>Make sure that those top 9 posts aren&apos;t outdated.</li>
 	   			</ul>
 	   			<p>
 	   			The niche specific hashtags:<br/>
-	   			this mean that the hashtags you're using should be very specific to your photo, caption, profile.
-	   			niching down is a benefit to you, let's just do an example if you were to post a picture of yourself in hawaii and giving like 5 best tips for instagram hashtag strategy stay away from irrelevent hashtags like #mondaymotivation or #bossbabe or #travellust, one of those might be irrelevent but the other ones while they might be relevent to the post a little bit
-	   			like #travellust or #bossbabe they're not niche specific there not niched down enough to truly help that photo. instead you could use #hashtagstrategy or #instagramtips or #hawaiitravel with these hashtags you're niching down, explaining the photo type and what the caption is about and your profile.
+	   			this mean that the hashtags you&apos;re using should be very specific to your photo, caption, profile.
+	   			niching down is a benefit to you, let&apos;s just do an example if you were to post a picture of yourself in hawaii and giving like 5 best tips for instagram hashtag strategy stay away from irrelevent hashtags like #mondaymotivation or #bossbabe or #travellust, one of those might be irrelevent but the other ones while they might be relevent to the post a little bit
+	   			like #travellust or #bossbabe they&apos;re not niche specific there not niched down enough to truly help that photo. instead you could use #hashtagstrategy or #instagramtips or #hawaiitravel with these hashtags you&apos;re niching down, explaining the photo type and what the caption is about and your profile.
    			</p>
    		</article>
 			<article className="content">
    			<h2>How To Find Niche Hashtags</h2>
    			<p>
-	   			There are a few ways to find niche hashtags and instagram used to have a really great feature for this where you could see relevent hashtags but they don't have that feature anymore so you have to kind do little bit more digging when you go to the top 9 posts of a hashag that you're confident is niched down enough you can look at what other hashtags users are using within the top 9 posts. Another option is that you can go to a competitor's profile or profile within your niche and see what sort of hastags they're using and use those.</p>
+	   			There are a few ways to find niche hashtags and instagram used to have a really great feature for this where you could see relevent hashtags but they don&apos;t have that feature anymore so you have to kind do little bit more digging when you go to the top 9 posts of a hashag that you&apos;re confident is niched down enough you can look at what other hashtags users are using within the top 9 posts. Another option is that you can go to a competitor&apos;s profile or profile within your niche and see what sort of hastags they&apos;re using and use those.</p>
 	   			<p>Warning: make sure you stay away from banned hashtags.</p>
    		</article>
 			<article className="content">
 	 			<h2>What Are Banned Hashtags</h2>
 	 			<p>
-	   			Instagram has been cleaning certain hashtag groupings because they either overpopulated or they've had content that has violated their community guidlines, to check to see if a hashtag is banned go the hashtag you want to use on instagram if you see this popup "recent posts for #your_hashtag are hidden because some posts may not follow instagram community guidlines." this means that this hashtag is temporarily or indefinitly banned. if you repeatedly use a banned hashtag it can decrease your reach on your posts.
+	   			Instagram has been cleaning certain hashtag groupings because they either overpopulated or they&apos;ve had content that has violated their community guidlines, to check to see if a hashtag is banned go the hashtag you want to use on instagram if you see this popup &quot;recent posts for #your_hashtag are hidden because some posts may not follow instagram community guidlines.&quot; this means that this hashtag is temporarily or indefinitly banned. if you repeatedly use a banned hashtag it can decrease your reach on your posts.
 	 			</p>
 	 		</article>
 	 		<article className="content">
@@ -218,8 +218,8 @@ export default function Hashtag() {
 			 			<button id="faq-1" onClick={handleFaq} >+</button>
 			 		</div>
 			 		<p id="faq-1" className="faq-answer">
-			 			There is a rumor going around that "you should use 13 hastags, 13 is the magical number!".
-						that's not true you can use as many or as little as you'd like as long as they are specific and niched down.
+			 			There is a rumor going around that &quot;you should use 13 hastags, 13 is the magical number!&quot;.
+						that&apos;s not true you can use as many or as little as you&apos;d like as long as they are specific and niched down.
 					</p>
 		 		</div>
 	 			<div className="faq">
@@ -233,11 +233,11 @@ export default function Hashtag() {
 		 		</div>
 	 			<div className="faq">
 			 		<div id="faq-3" className="question" >
-			 			<p>what if hastags don't work?</p>
+			 			<p>what if hastags don&apos;t work?</p>
 			 			<button id="faq-3" onClick={handleFaq}>+</button>
 			 		</div>
 			 		<p id="faq-3" className="faq-answer">
-			 			If hastags don't work with your niche focus on SEO and keywords.
+			 			If hastags don&apos;t work with your niche focus on SEO and keywords.
 					</p>
 		 		</div>
 	 		</article>

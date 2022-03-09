@@ -64,7 +64,7 @@ export default function Text2Binary() {
 			<article className="content">
 				<h1>Convert text to binary</h1>
 				<p>
-					Best free online tool convert text or string to binary and download the result as a text file, the quick and easy way to convert to binary. It's never been that easy 100% for free.
+					Best free online tool convert text or string to binary and download the result as a text file, the quick and easy way to convert to binary. It&apos;s never been that easy 100% for free.
 				</p>
 			</article>
 			<article className="content">
@@ -114,11 +114,11 @@ export default function Text2Binary() {
 			</article>
 			<article className="content">
 				<h2>How binary work</h2>
-				<p>Let's think of binary as a light switch imagine that 1 represents the light switch being on and 0 represents it being off with binary the light is either on or off with no other possible States so these bits are strung together as different combinations of ones and zeros and they form a kind of code your computer then rapidly processes this code and translates it into data telling it what to do you.</p>
+				<p>Let&apos;s think of binary as a light switch imagine that 1 represents the light switch being on and 0 represents it being off with binary the light is either on or off with no other possible States so these bits are strung together as different combinations of ones and zeros and they form a kind of code your computer then rapidly processes this code and translates it into data telling it what to do you.</p>
 			</article>
 			<article className="content">
 				<h2>Why do computers use binary instead of the decimal system</h2>
-				<p>Well as previously mentioned binary has two states off and on if computers were to use decimal there would be 10 states instead our computers would have to work a lot harder to process all of these, binary is easier for them to process and also takes up less space just like atoms make up everything around us in the real world everything in the digital world including video text pictures and more can be broken down into binary and even though we can't see them it's all a bunch of ones and zeros.</p>
+				<p>Well as previously mentioned binary has two states off and on if computers were to use decimal there would be 10 states instead our computers would have to work a lot harder to process all of these, binary is easier for them to process and also takes up less space just like atoms make up everything around us in the real world everything in the digital world including video text pictures and more can be broken down into binary and even though we can&apos;t see them it&apos;s all a bunch of ones and zeros.</p>
 			</article>
 			<Footer/>
        </>
