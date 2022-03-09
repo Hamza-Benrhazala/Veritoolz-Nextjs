@@ -1,0 +1,32 @@
+/*basics*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+a {
+  color: var(--anchor-text-color);
+  text-decoration: none;
+  transition: all 0.2s ease-in-out;
+}
+li {
+  list-style: none;
+}
+:root {
+  --anchor-text-color: #000000;
+  --anchor-text-color-hover: #0057d7;
+  --footer-anchor-text-color-hover: #000000;
+  --desktop-anchor-text-size: 1.5rem;
+  --mobile-anchor-text-size: 1.3rem;
+  --small-text-color: #636363;
+  --desktop-small-text-size: 0.9rem;
+  --mobile-small-text-size: 0.9rem;
+}
+body {
+  margin: 0;
+  font-family: 'Poppins', -apple-system, BlinkMacSystemFont, 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
