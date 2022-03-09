@@ -70,7 +70,7 @@ export default function Hashtag() {
 			<article className="content">
 				<h1>Remove empty lines from text</h1>
 				<p>
-					An online tool to remove empty lines from your text with the ability to download the result as a text file, Don't waste your precious time on silly things let us to the job for you.
+					An online tool to remove empty lines from your text with the ability to download the result as a text file, Don&apos;t waste your precious time on silly things let us to the job for you.
 				</p>
 			</article>
 			<article className="content">

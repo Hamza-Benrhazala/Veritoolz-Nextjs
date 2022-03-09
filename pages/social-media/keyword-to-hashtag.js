@@ -98,7 +98,7 @@ export default function Hashtag() {
    			<h2>How to use</h2>
    			<ul className="how-to">
    				<li>Put your keywords in the text area.</li>
-   				<li><span className="span-optional">optional:</span> put your prefered word on the "Replace space with" to replace space with your word.</li>
+   				<li><span className="span-optional">optional:</span> put your prefered word on the `&quot;Replace space with`&quot; to replace space with your word.</li>
    				<li>Click on the submit button.</li>
    				<li><span className="span-optional">optional:</span> click on the download button to download your result as a text file.</li>
    			</ul>
@@ -158,7 +158,7 @@ export default function Hashtag() {
 	 				#hello_word<br/>
 	 				#online-tools<br/>
 	 			</div>
-	 			<p className="small-note">keywords that has "#" will be ignored.</p>
+	 			<p className="small-note">keywords that has &quot;#&quot; will be ignored.</p>
 			</article>
 			<article className="content">
    			<h2>Why Shoud You Use Hashtags</h2>

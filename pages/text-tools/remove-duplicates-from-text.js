@@ -127,7 +127,7 @@ export default function RemoveDupes() {
 			</div>
 			<article className="content">
 	 			<h2>Example</h2>
-	 			<p>In this basic example we will try to demonstrate how you can use text spliter with both modes <span className="span-code">&quot;Multi-line&quot;</span> and <span className="span-code">"text"</span> to remove duplicates from your text.<br/>
+	 			<p>In this basic example we will try to demonstrate how you can use text spliter with both modes <span className="span-code">&quot;Multi-line&quot;</span> and <span className="span-code">&quot;text&quot;</span> to remove duplicates from your text.<br/>
 	 				1) will start with <span className="span-code">&quot;Multi-line&quot;</span> mode.<br/> multi-line is basically a mode that treat your text as a bunch of lines, it compare those lines and see if there is a duplicated line and remove it.
 	 			</p>
 	 			<p>The demo text:</p>
