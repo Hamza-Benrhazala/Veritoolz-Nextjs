@@ -3,6 +3,7 @@ import { saveAs } from 'file-saver';
 import { useRef, useState } from "react"
 import Footer from "../../components/Footer"
 import Nav from "../../components/Nav"
+import RelatedTools from "../../components/RelatedTools"
 
 export default function ExtractData() {
 	const [data, setData] = useState("")
@@ -119,7 +120,7 @@ export default function ExtractData() {
 							<textarea ref={resultRef} onChange={handleResult} defaultValue={result} spellCheck="false"></textarea>
 							<div className="clipboard-svg-box">
 								<div className="clipboard-svg-bg">
-									<svg onClick={copyToClipbloard} version="1.1" className="clipboard-svg" xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 455 455" xmlSpace="preserve" width="22px" height="22px">
+									<svg onClick={copyToClipbloard} version="1.1" className="clipboard-svg" xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 455 455" xmlSpace="preserve" width="22" height="22">
 					    	        <g>
 					    	            <polygon points="295.343,31.863 262.549,31.863 262.549,0 192.451,0 192.451,31.863 159.657,31.863 159.657,86.961 295.343,86.961
 					    					" />
@@ -133,16 +134,16 @@ export default function ExtractData() {
 						</div>
 					</div>
 					<div className="submit-set-box">
-						<label className="flex-label">
+						<div className="flex-label">
 							<div>
 								<span>Left delimeter:</span>
-			  					<input className="input-medium" type="text" onChange={handleLeftText} defaultValue={leftText}/>
+		  					<input className="input-medium" type="text" onChange={handleLeftText} defaultValue={leftText}/>
 							</div>
 							<div>
 								<span>Right delimeter:</span>
-			  					<input className="input-medium" type="text" onChange={handleRightText} defaultValue={rightText}/>
+		  					<input className="input-medium" type="text" onChange={handleRightText} defaultValue={rightText}/>
 							</div>
-			  			</label>
+		  			</div>
 						<button className="btn-submit" onClick={submitResult}>Submit</button>
 						<button className="btn-submit" onClick={Download}>Download</button>
 					</div>
@@ -166,6 +167,7 @@ export default function ExtractData() {
    			<p>The result:</p>
    			<div className="code-playground">26</div>
 			</article>
+			<RelatedTools/>
 			<Footer/>
        </>
    );

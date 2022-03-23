@@ -3,6 +3,8 @@ import { saveAs } from 'file-saver'
 import { useRef, useState } from "react"
 import Nav from '../../components/Nav'
 import Footer from "../../components/Footer"
+import RelatedTools from "../../components/RelatedTools"
+
 export default function RemoveDupes() {
 	const [data, setData] = useState("")
 	const [result, setResult] = useState("")
@@ -101,7 +103,7 @@ export default function RemoveDupes() {
 						<textarea ref={resultRef} onChange={handleResult} defaultValue={result} spellCheck="false"></textarea>
 							<div className="clipboard-svg-box">
 								<div className="clipboard-svg-bg">
-									<svg onClick={copyToClipbloard} version="1.1" className="clipboard-svg" xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 455 455" xmlSpace="preserve" width="22px" height="22px">
+									<svg onClick={copyToClipbloard} version="1.1" className="clipboard-svg" xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 455 455" xmlSpace="preserve" width="22" height="22">
 					    	        <g>
 					    	            <polygon points="295.343,31.863 262.549,31.863 262.549,0 192.451,0 192.451,31.863 159.657,31.863 159.657,86.961 295.343,86.961
 					    					" />
@@ -115,12 +117,12 @@ export default function RemoveDupes() {
 					</div>
 				</div>
 				<div className="submit-set-box">
-					<label>
-							<span>Multi-line:</span>
-							<input type="checkbox" onChange={handleCheckBox} checked={asMultiLines}/>
-							<span style={{marginLeft: "5px"}} >Text:</span>
-							<input type="checkbox" onChange={handleCheckBox} checked={asOneText}/>
-						</label>
+					<div className="flex-label nocolumn">
+						<span>Multi-line:</span>
+						<input type="checkbox" onChange={handleCheckBox} checked={asMultiLines}/>
+						<span style={{marginLeft: "5px"}} >Text:</span>
+						<input type="checkbox" onChange={handleCheckBox} checked={asOneText}/>
+					</div>
 					<button className="btn-submit" onClick={submitResult}>Submit</button>
 					<button className="btn-submit" onClick={Download}>Download</button>
 				</div>
@@ -148,7 +150,9 @@ export default function RemoveDupes() {
 	 			</div>
 	 			<p className="small-note">note that both <span className="span-code">&quot;multi-line&quot;</span> mode and <span className="span-code">&quot;text&quot;</span> mode are case sensitive.</p>
 			</article>
+			<RelatedTools />
 			<Footer/>
        </>
    );
 }
+

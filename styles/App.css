@@ -83,6 +83,7 @@ nav .ulNav {
   width: 100%;
   align-items: center;
   justify-content: space-evenly;
+  margin-bottom: 3px;
 }
 nav .ulNav .ulNav-li {
   position: relative;
@@ -142,7 +143,7 @@ nav .ulNav li .svg-caret {
   box-shadow:
   0px 4.8px 5.4px rgba(0, 0, 0, 0.035),
   0px 24px 43px rgba(0, 0, 0, 0.07);
-  margin:  15px 50px;
+  margin:  25px 50px;
   padding: 15px 15px 25px 15px;
   border-radius: 8px;
   width: 300px;
@@ -309,7 +310,7 @@ input[type="text"] {
 .submit-set-box button {
   margin-right: 25px;
 }
-label input:focus {
+.flex-label input:focus {
   outline: 1px solid #a1d5ff;
   box-shadow: 1px 1px 13px #7fc6ff;
 }
@@ -333,20 +334,20 @@ span {
   padding: 0 2.5px;
   border-radius: 3px;
 }
-label {
+.flex-label {
   display: block;
   margin-bottom: 10px;
 }
-.submit-set-box label div:nth-child(2n) {
+.submit-set-box .flex-label div:nth-child(2n) {
   margin-left: 5px;
 }
 .submit-set-box .flex-label {
   display: flex;
 }
-label input {
+.flex-label input {
   margin-left: 5px;
 }
-label input[type="checkbox"] {
+.flex-label input[type="checkbox"] {
   transform: translateY(1px);
 }
 button {
@@ -570,16 +571,15 @@ th {
 }
 .seo-parent .seo-result {
   display: flex;
-  justify-content: space-around;
-  align-items: center;
-  margin: 40px 10px;
+  justify-content: space-evenly;
+  align-items: flex-start;
+  margin: 85px 10px 40px 10px;
   width: 100%;
 }
-.seo-parent .seo-result ul {
-
-}
 .seo-parent .seo-result ul li {
-  margin: 15px 2px;
+  font-size: 15px;
+  margin: 15px 12px 15px 0;
+  color: #201e20;
 }
 /*notifications*/
 .blocked-notification p {
@@ -591,6 +591,7 @@ progress {
   border-radius: 10px;
   background-color: gray;
   margin-bottom: 3px;
+  margin-right: 10px;
 }
 
 progress::-moz-progress-bar {
@@ -803,13 +804,16 @@ p.small-note .span-code {
   .submit-set-box .flex-label {
     flex-direction: column;
   }
+  .submit-set-box .flex-label.nocolumn{
+    flex-direction: unset;
+  }
   .submit-set-box span {
     margin-left: 0;
   }
-  .submit-set-box label div {
+  .submit-set-box .flex-label div {
     margin: 10px 0;
   }
-  .submit-set-box label div:nth-child(2n) {
+  .submit-set-box .flex-label div:nth-child(2n) {
     margin-left: 0px;
   }
   .three-wrapper {
@@ -993,6 +997,13 @@ p.small-note .span-code {
   .code-playground {
     margin: 0;
     max-width: 90%;
+  }
+  /*FAQ*/
+  .content-faq {
+    margin: 0 15px;
+  }
+  .faq {
+    margin: 15px auto;
   }
 }
 /*Tablets*/

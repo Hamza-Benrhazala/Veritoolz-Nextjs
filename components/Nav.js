@@ -71,8 +71,9 @@ export default function Nav() {
 		CloseIcon.current.classList.remove("opened")
 	}
 	function handleClicks(e) {
-		if(e.target.id) {
-			const dropdown = document.querySelector(`.dropdown-menu#${e.target.id}`)
+		const target = e.target.getAttribute("data-id");
+		if(target) {
+			const dropdown = document.querySelector(`.dropdown-menu[data-id=${target}]`)
 			if(dropdown && !dropdown.className.includes("open")) {
 				dropdown.classList.add("open")
 			}
@@ -92,12 +93,12 @@ export default function Nav() {
 		})
 
 		return (
-			<li key={`li-${i}`} id={`li-${i}`} onClick={handleClicks} className="ulNav-li">
+			<li key={`li-${i}`} data-id={`li-${i}`} onClick={handleClicks} className="ulNav-li">
 				{item?.category}
-				<svg id={`li-${i}`} className="svg-caret" width="15" height="15" viewBox="0 0 16 16">
-		       		<path id={`li-${i}`} d="M7.247 11.14 2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z"/>
+				<svg data-id={`li-${i}`} className="svg-caret" width="15" height="15" viewBox="0 0 16 16">
+		       		<path data-id={`li-${i}`} d="M7.247 11.14 2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z"/>
      		</svg>
-     		<ul id={`li-${i}`} ref={dropDownMenu} className="dropdown-menu">
+     		<ul data-id={`li-${i}`} ref={dropDownMenu} className="dropdown-menu">
      				{link}
      		</ul>
 			</li>
@@ -109,7 +110,7 @@ export default function Nav() {
 	 		<div className="logo-box">
 		 		<Link href="/">
 		 			<a>
-		 				<img className="logo" src="/VERITOOLZ.png" alt="veritoolz logo" width="155px" height="42px"/>
+		 				<img className="logo" src="/VERITOOLZ.png" alt="veritoolz logo" width="155" height="42"/>
 		 			</a>
 		 		</Link>
 	 		</div>
@@ -123,7 +124,7 @@ export default function Nav() {
 		 		<div ref={shadow} className="shadow" onClick={handleMenuContainer}></div>
 	 		</div>
 	 		<svg
-		 		xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
+		 		xmlns="http://www.w3.org/2000/svg" x="0" y="0"
 		 		className="svg-menu"
 		 		ref={HamburgerIcon}
 		 		onClick={openMenu}

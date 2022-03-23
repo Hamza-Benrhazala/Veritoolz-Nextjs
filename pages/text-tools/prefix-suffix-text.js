@@ -3,6 +3,7 @@ import { saveAs } from 'file-saver';
 import { useRef, useState } from "react"
 import Footer from '../../components/Footer'
 import Nav from '../../components/Nav'
+import RelatedTools from "../../components/RelatedTools"
 
 export default function PrefixSuffix() {
 	const [prefix, setPrefix] = useState([""])
@@ -124,12 +125,12 @@ export default function PrefixSuffix() {
 	return(
 	   	<div className="Wrapper">
 			<Head>
-				<title>Prefix/Suffix Your Text Online For Free | veritoolz</title>
-				<meta id="description" name="description" content="Best tool to prefix/suffix your text online with the option to ignore empty lines automaticlly out of the box, you can also download the result if you want, try this tool and save your time. It's 100% for free." />
+				<title>Prefix And Suffix Text | veritoolz</title>
+				<meta id="description" name="description" content="Best tool to prefix and suffix your text online with the option to ignore empty lines automaticlly out of the box, you can also download the result if you want, try this tool and save your time. It's 100% for free." />
 				<meta id="og-title" property="og:title" content="Add a prefix or suffix to Text | veritoolz" />
-				<meta property="og:description" content="Best tool to prefix/suffix your text online with the option to ignore empty lines automaticlly out of the box, you can also download the result if you want, try this tool and save your time. It's 100% for free."/>
+				<meta property="og:description" content="Best tool to prefix and suffix your text online with the option to ignore empty lines automaticlly out of the box, you can also download the result if you want, try this tool and save your time. It's 100% for free."/>
 		    <meta name="twitter:title" content="Add a prefix/suffix to Text | veritoolz"/>
-		    <meta name="twitter:description" content="Best tool to prefix/suffix your text online with the option to ignore empty lines automaticlly out of the box, you can also download the result if you want, try this tool and save your time. It's 100% for free."/>
+		    <meta name="twitter:description" content="Best tool to prefix and suffix your text online with the option to ignore empty lines automaticlly out of the box, you can also download the result if you want, try this tool and save your time. It's 100% for free."/>
 		    <meta name="robots" content="all"/>
 		    <meta name="keywords" content="prefix text and download, prefix text online,
 		    prefix suffix generator, prefix generator, suffix generator, prefix suffix,
@@ -138,9 +139,9 @@ export default function PrefixSuffix() {
 			</Head>
 			<Nav/>
 			<article className="content">
-				<h1>Add Prefix/Suffix to text</h1>
+				<h1>Prefix and suffix text</h1>
 				<p>
-					Best tool to prefix/suffix your text online with the option to ignore empty lines automaticlly out of the box, you can also download the result if you want, try this tool and save your time. It&apos;s 100% for free.
+					Best tool to prefix and suffix your text online with the option to ignore empty lines automaticlly out of the box, you can also download the result if you want, try this tool and save your time. It&apos;s 100% for free.
 				</p>
 			</article>
 			<article className="content">
@@ -188,7 +189,7 @@ export default function PrefixSuffix() {
 				<textarea ref={resultRef} onChange ={handleResult} value={result} spellCheck="false"></textarea>
 				<div className="clipboard-svg-box">
 					<div className="clipboard-svg-bg">
-						<svg onClick={copyToClipbloard} version="1.1" className="clipboard-svg" xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 455 455" xmlSpace="preserve" width="22px" height="22px">
+						<svg onClick={copyToClipbloard} version="1.1" className="clipboard-svg" xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 455 455" xmlSpace="preserve" width="22" height="22">
 		    	        <g>
 		    	            <polygon points="295.343,31.863 262.549,31.863 262.549,0 192.451,0 192.451,31.863 159.657,31.863 159.657,86.961 295.343,86.961
 		    					" />
@@ -200,6 +201,7 @@ export default function PrefixSuffix() {
     	    <div ref={copyNoti} className="copy-notification">copy to clipbloard</div>
 				</div>
 			</div>
+			<RelatedTools/>
 			<Footer/>
 		</div>
    );

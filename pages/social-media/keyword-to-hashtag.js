@@ -61,8 +61,9 @@ export default function Hashtag() {
 		}
 	}
 	function handleFaq(e) {
-		const target = document.querySelector(`p#${e.target.id}`)
-		const question = document.querySelector(`.question#${e.target.id}`)
+		const id = e.target.getAttribute("data-id")
+		const target = document.querySelector(`p[data-id=${id}]`)
+		const question = document.querySelector(`.question[data-id=${id}]`)
 		if(!target.className.includes("active")) {
 			target.classList.add("active")
 			question.classList.add("active")
@@ -72,6 +73,36 @@ export default function Hashtag() {
 			question.classList.remove("active")
 		}
 	}
+
+	const schemaData = {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [{
+      "@type": "Question",
+      "name": "How many hastags shoud I use?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "There is a rumor going around that \"you should use 13 hastags, 13 is the magical number\".that's not true you can use as many or as little as you'd like as long as they are specific and niched down."
+      }
+      },
+      {
+      "@type": "Question",
+      "name": "Where to place hashtags?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "If your goal is to maximize reach then put them in the caption."
+      }
+      },
+      {
+      "@type": "Question",
+      "name": "what if hastags don't work?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "If hastags don't work with your niche focus on SEO and keywords."
+      }
+      }
+    ]
+  }
 
 	return(
    <>
@@ -86,6 +117,12 @@ export default function Hashtag() {
 		    <meta name="keywords" content="hashtag generator, create hashtags online,
 		    text to hashtag, keywords to hashtags, bulk hashtag creator"/>
 		    <link rel="canonical" href="https://veritoolz.com/social-media/create-hashtags-from-keywords" />
+		    <script
+		    type="application/ld+json"
+		    dangerouslySetInnerHTML={{
+		      __html: JSON.stringify(schemaData)
+		    }}
+		    />
 			</Head>
    		<Nav/>
    		<article className="content">
@@ -98,7 +135,7 @@ export default function Hashtag() {
    			<h2>How to use</h2>
    			<ul className="how-to">
    				<li>Put your keywords in the text area.</li>
-   				<li><span className="span-optional">optional:</span> put your prefered word on the `&quot;Replace space with`&quot; to replace space with your word.</li>
+   				<li><span className="span-optional">optional:</span> put your prefered word on the &quot;Replace space with&quot; to replace space with your word.</li>
    				<li>Click on the submit button.</li>
    				<li><span className="span-optional">optional:</span> click on the download button to download your result as a text file.</li>
    			</ul>
@@ -114,7 +151,7 @@ export default function Hashtag() {
 							<textarea ref={resultRef} onChange={handleResult} defaultValue={result} spellCheck="false"></textarea>
 							<div className="clipboard-svg-box">
 								<div className="clipboard-svg-bg">
-									<svg onClick={copyToClipbloard} version="1.1" className="clipboard-svg" xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 455 455" xmlSpace="preserve" width="22px" height="22px">
+									<svg onClick={copyToClipbloard} version="1.1" className="clipboard-svg" xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 455 455" xmlSpace="preserve" width="22" height="22">
 					    	        <g>
 					    	            <polygon points="295.343,31.863 262.549,31.863 262.549,0 192.451,0 192.451,31.863 159.657,31.863 159.657,86.961 295.343,86.961
 					    					" />
@@ -128,10 +165,10 @@ export default function Hashtag() {
 						</div>
 					</div>
 					<div className="submit-set-box">
-						<label>
-			  				<span>Replace space with:</span>
+						<div className="flex-label nocolumn">
+			  				<span style={{alignSelf: "center"}}>Replace space with:</span>
 			  				<input type="text" onChange ={handleSeparator} defaultValue={separator}/>
-			  			</label>
+		  			</div>
 						<button className="btn-submit" onClick={submitHashtags}>Submit</button>
 						<button className="btn-submit" onClick={Download}>Download</button>
 					</div>
@@ -210,33 +247,33 @@ export default function Hashtag() {
 	   			Instagram has been cleaning certain hashtag groupings because they either overpopulated or they&apos;ve had content that has violated their community guidlines, to check to see if a hashtag is banned go the hashtag you want to use on instagram if you see this popup &quot;recent posts for #your_hashtag are hidden because some posts may not follow instagram community guidlines.&quot; this means that this hashtag is temporarily or indefinitly banned. if you repeatedly use a banned hashtag it can decrease your reach on your posts.
 	 			</p>
 	 		</article>
-	 		<article className="content">
+	 		<article className="content content-faq">
 	 			<h2 className="faq-h2">FAQ</h2>
 	 			<div className="faq" >
-			 		<div id="faq-1" className="question" >
+			 		<div data-id="faq-1" className="question" >
 			 			<p>How many hastags shoud I use?</p>
-			 			<button id="faq-1" onClick={handleFaq} >+</button>
+			 			<button data-id="faq-1" onClick={handleFaq} >+</button>
 			 		</div>
-			 		<p id="faq-1" className="faq-answer">
+			 		<p data-id="faq-1" className="faq-answer">
 			 			There is a rumor going around that &quot;you should use 13 hastags, 13 is the magical number!&quot;.
 						that&apos;s not true you can use as many or as little as you&apos;d like as long as they are specific and niched down.
 					</p>
 		 		</div>
 	 			<div className="faq">
-			 		<div id="faq-2" className="question" >
+			 		<div data-id="faq-2" className="question" >
 			 			<p>Where to place hashtags?</p>
-			 			<button id="faq-2" onClick={handleFaq}>+</button>
+			 			<button data-id="faq-2" onClick={handleFaq}>+</button>
 			 		</div>
-			 		<p id="faq-2" className="faq-answer">
+			 		<p data-id="faq-2" className="faq-answer">
 			 			If your goal is to maximize reach then put them in the caption.
 					</p>
 		 		</div>
 	 			<div className="faq">
-			 		<div id="faq-3" className="question" >
+			 		<div data-id="faq-3" className="question" >
 			 			<p>what if hastags don&apos;t work?</p>
-			 			<button id="faq-3" onClick={handleFaq}>+</button>
+			 			<button data-id="faq-3" onClick={handleFaq}>+</button>
 			 		</div>
-			 		<p id="faq-3" className="faq-answer">
+			 		<p data-id="faq-3" className="faq-answer">
 			 			If hastags don&apos;t work with your niche focus on SEO and keywords.
 					</p>
 		 		</div>

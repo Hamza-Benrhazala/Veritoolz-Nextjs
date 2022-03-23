@@ -3,6 +3,8 @@ import { saveAs } from 'file-saver'
 import { useRef, useState } from "react"
 import Nav from '../../components/Nav'
 import Footer from "../../components/Footer"
+import RelatedTools from "../../components/RelatedTools"
+
 export default function Text2Binary() {
 	const [data, setData] = useState("")
 	const [result, setResult] = useState("")
@@ -86,7 +88,7 @@ export default function Text2Binary() {
 						<textarea ref={resultRef} onChange={handleResult} defaultValue={result} spellCheck="false"></textarea>
 						<div className="clipboard-svg-box">
 							<div className="clipboard-svg-bg">
-								<svg onClick={copyToClipbloard} version="1.1" className="clipboard-svg" xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 455 455" xmlSpace="preserve" width="22px" height="22px">
+								<svg onClick={copyToClipbloard} version="1.1" className="clipboard-svg" xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 455 455" xmlSpace="preserve" width="22" height="22">
 				    	        <g>
 				    	            <polygon points="295.343,31.863 262.549,31.863 262.549,0 192.451,0 192.451,31.863 159.657,31.863 159.657,86.961 295.343,86.961
 				    					" />
@@ -120,6 +122,7 @@ export default function Text2Binary() {
 				<h2>Why do computers use binary instead of the decimal system</h2>
 				<p>Well as previously mentioned binary has two states off and on if computers were to use decimal there would be 10 states instead our computers would have to work a lot harder to process all of these, binary is easier for them to process and also takes up less space just like atoms make up everything around us in the real world everything in the digital world including video text pictures and more can be broken down into binary and even though we can&apos;t see them it&apos;s all a bunch of ones and zeros.</p>
 			</article>
+			<RelatedTools/>
 			<Footer/>
        </>
 

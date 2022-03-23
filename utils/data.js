@@ -4,7 +4,7 @@ export const DATA = [
         "categoryUrl": "text-tools",
         "categoryTools": [
             {
-                "toolName": "Add prefix or suffix to text",
+                "toolName": "Prefix and suffix text",
                 "toolUrl": "prefix-suffix-text",
                 "ToolDescription": "Add Prefix or Suffix to multiple lines of text",
                 "nav": true
@@ -31,7 +31,7 @@ export const DATA = [
                 "ToolDescription": "Split any text into pieces."
             },
             {
-                "toolName": "Text randomizer ",
+                "toolName": "Randomize lines",
                 "toolUrl": "randomize-text-lines",
                 "ToolDescription": "Randomize your text lines."
             },

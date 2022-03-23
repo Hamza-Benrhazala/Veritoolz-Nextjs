@@ -2,6 +2,7 @@ import Head from 'next/head'
 import { useState } from "react"
 import Nav from "../../components/Nav"
 import Footer from "../../components/Footer"
+import RelatedTools from "../../components/RelatedTools"
 
 export default function TextSeparator() {
 	const [data, setData] = useState("")
@@ -65,13 +66,13 @@ export default function TextSeparator() {
 			</p>
 		</article>
 		<article className="content">
-			   			<h2>How to use</h2>
+   			<h2>How to use</h2>
    			<ul className="how-to">
-				<li>Put your text in the text area.</li>
-				<li>Put your separator in the separator area.</li>
-				<li>Click on the submit button and you&apos;ll get your result.</li>
-				<li><span className="span-optional">optional:</span> click on the download button to download your result as text file.</li>
-			</ul>
+					<li>Put your text in the text area.</li>
+					<li>Put your separator in the separator area.</li>
+					<li>Click on the submit button and you&apos;ll get your result.</li>
+					<li><span className="span-optional">optional:</span> click on the download button to download your result as text file.</li>
+				</ul>
 		</article>
 		<div className="wrapper-parent">
 		    <div className="result-container">
@@ -79,10 +80,10 @@ export default function TextSeparator() {
 					<textarea onChange ={handleData} defaultValue={data} spellCheck="false"></textarea>
 				</div>
 				<div className="submit-set-box">
-					<label>
-		  				<span>Separator:</span>
-		  				<input type="text" onChange ={handleSeparator} defaultValue={separator}/>
-		  			</label>
+					<div className="flex-label nocolumn">
+	  				<span style={{alignSelf: "center"}} >Separator:</span>
+	  				<input type="text" onChange ={handleSeparator} defaultValue={separator}/>
+	  			</div>
 					<button className="btn-submit" onClick={submitResult}>Submit</button>
 				</div>
 				<div className="two-wrapper" style={{marginTop: "20px"}} >
@@ -114,6 +115,7 @@ export default function TextSeparator() {
  			<p>Right side</p>
  			<div className="code-playground">website.com<br/>domain.com</div>
 		</article>
+		<RelatedTools/>
 		<Footer/>
 	   </>
    );

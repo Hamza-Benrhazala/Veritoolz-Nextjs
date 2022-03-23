@@ -4,6 +4,7 @@ import axios from "axios";
 import Nav from "../../components/Nav"
 import Footer from "../../components/Footer"
 import { saveAs } from 'file-saver';
+import RelatedTools from "../../components/RelatedTools"
 
 export default function KeywordTool() {
 
@@ -83,7 +84,7 @@ export default function KeywordTool() {
 				<p style={{margin: "10px 0", "fontWeight": "400", "padding":" 0 10px"}}>{el.name.replace(/(?:<[^>]+>)/gi, "")}</p>
 			</th>
 			<th style={{width: "0px"}}>
-			<span style={{marginRight: "10px"}}>{el.frequencyDisplay}</span>
+			<span style={{marginRight: "10px", fontWeight: "500"}}>{el.frequencyDisplay}</span>
 			</th>
 			<th style={{width: "0px"}}>
 				<progress value={el.frequencyDisplay.replace("%", "")} max="100"></progress>
@@ -206,6 +207,7 @@ export default function KeywordTool() {
 				Based on the above stats, we can safely conclude that optimizing your website for question keywords can make a huge difference to your SEO strategy. You can generate a lot of organic traffic, earn links or convert traffic into sales simply by grabbing a share of the featured snippet.
 				</p>
 			</article>
+			<RelatedTools/>
 			<Footer/>
    </>
    );

@@ -3,6 +3,7 @@ import { useState, useEffect } from "react"
 import axios from "axios";
 import Nav from "../../components/Nav"
 import Footer from "../../components/Footer"
+import RelatedTools from "../../components/RelatedTools"
 
 export default function QuestionSearcher() {
 	const BASE_URL = "https://veritoolz.herokuapp.com"
@@ -67,14 +68,17 @@ export default function QuestionSearcher() {
 	}
 
 	const questionTemplate = result?.map((el, i) => {
-	  const questions = el?.data?.map((q, i) => <li key={`q-${i}`}>{q?.suggestion._attributes?.data}</li>)
-    return (
-	   	<div key={i}>
+		if(el.data.length > 0) {
+			const questions = el?.data?.map((q, i) => <li key={`q-${i}`}>{q?.suggestion._attributes?.data}</li>)
+			const template = <>
 				<h3>{el?.questionType}</h3>
 				<ul>
 	    		{questions}
 	    	</ul>
-			</div>
+			</>
+		}
+    return (
+	   	<div key={i}>{template}</div>
 		);
 	})
 
@@ -97,20 +101,20 @@ export default function QuestionSearcher() {
 			<article className="content">
 				<h1>Question explorer</h1>
 				<p>
-				Question explorer is a free seo tool to search and discover what people are asking on the internet on real time. See questions about hot topics, trends, new products & brands.
+				 Question explorer is a free seo tool to search and discover what people are asking on the internet on real time. See questions about hot topics, trends, new products & brands.
 				</p>
 			</article>
 			<div className="seo-parent">
-			<div className="search-wrapper">
-				<div className="search-wrapper-2">
-					<input type="text" className="search-bar" placeholder="Type a topic, keyword, product, brand" onChange={handleData} defaultValue={data} spellCheck="false" />
-					<button onClick={submitResult}>Search</button>
+				<div className="search-wrapper">
+					<div className="search-wrapper-2">
+						<input type="text" className="search-bar" placeholder="Type a topic, keyword, product, brand" onChange={handleData} defaultValue={data} spellCheck="false" />
+						<button onClick={submitResult}>Search</button>
+					</div>
 				</div>
-			</div>
-			<div className="seo-result">
-				{showLoading ? <h4>Loading...</h4> : questionTemplate}
-				{isUserBlocked ? blockedNotification : undefined}
-			</div>
+				<div className="seo-result">
+					{showLoading ? <h4>Loading...</h4> : questionTemplate}
+					{isUserBlocked ? blockedNotification : undefined}
+				</div>
 			</div>
 			<article className="content">
 				<h2>What is SEO</h2>
@@ -132,6 +136,7 @@ export default function QuestionSearcher() {
 				Based on the above stats, we can safely conclude that optimizing your website for question keywords can make a huge difference to your SEO strategy. You can generate a lot of organic traffic, earn links or convert traffic into sales simply by grabbing a share of the featured snippet.
 				</p>
 			</article>
+			<RelatedTools />
 			<Footer/>
 		</>
    );
