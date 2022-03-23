@@ -3,6 +3,8 @@ import { saveAs } from 'file-saver'
 import { useRef, useState } from "react"
 import Nav from '../../components/Nav'
 import Footer from "../../components/Footer"
+import RelatedTools from "../../components/RelatedTools"
+
 export default function TextToHex() {
 	const [data, setData] = useState("")
 	const [result, setResult] = useState("")
