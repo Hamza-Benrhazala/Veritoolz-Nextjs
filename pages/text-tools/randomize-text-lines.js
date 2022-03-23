@@ -60,22 +60,22 @@ export default function RemoveDupes() {
 	return(
        <>
 			<Head>
-				<title>Randomize Text | veritoolz</title>
-				<meta id="description" name="description" content="Best free online tool to randomize text lines and download the result as text file 100% for free." />
+				<title>Randomize lines | veritoolz</title>
+				<meta id="description" name="description" content="Best free online tool to randomize lines of text and download the result as text file 100% for free." />
 				<meta id="og-title" property="og:title" content="Randomize Text | veritoolz" />
-				<meta property="og:description" content="Best free online tool to randomize text lines and download the result as text file 100% for free."/>
+				<meta property="og:description" content="Best free online tool to randomize lines of text and download the result as text file 100% for free."/>
 			    <meta name="twitter:title" content="Randomize Text | veritoolz"/>
-			    <meta name="twitter:description" content="Best free online tool to randomize text lines and download the result as text file 100% for free."/>
+			    <meta name="twitter:description" content="Best free online tool to randomize lines of text and download the result as text file 100% for free."/>
 			    <meta name="robots" content="all"/>
-			    <meta name="keywords" content="randomize text line, randomize text lines,
-			    shuffle text, shuffle text lines"/>
+			    <meta name="keywords" content="randomize lines, randomize text,
+			    shuffle text, shuffle lines"/>
 			    <link rel="canonical" href="https://veritoolz.com/text-tools/randomize-text-lines" />
 			</Head>
 			<Nav/>
 			<article className="content">
-				<h1>Randomize text</h1>
+				<h1>Randomize lines</h1>
 				<p>
-					Best free online tool to randomize text lines and download the result as text file 100% for free.
+					Best free online tool to randomize lines of text and download the result as text file 100% for free.
 				</p>
 			</article>
 			<article className="content">
